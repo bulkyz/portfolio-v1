@@ -36,6 +36,7 @@ li {
 li:hover {
     text-decoration: underline;
     color: #00FFE0;
+    filter: drop-shadow(0 0 0.75rem #00FFE0);
 }
 
 a {
@@ -53,4 +54,5 @@ nav a {
 .socials a img:hover {
     transform: scale(1.1);
     transition:  0.1s ease-out;
+    filter: drop-shadow(0 0 0.75rem #00FFE0);
 }
