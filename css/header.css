@@ -3,10 +3,10 @@ header {
     justify-content: space-between;
     align-items: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     color: white;
-    padding: 2rem 3rem;
+    padding: 1.5rem;
     position: fixed;
     top: 0;
     z-index: 99;
@@ -21,6 +21,7 @@ header {
 
 nav {
     font-size: 16px;
+    justify-items: center;
 }
 
 ul {
@@ -43,4 +44,13 @@ a {
 
 nav a {
     color: white;
+}
+
+.socials a img {
+    padding: 0 1rem;
+}
+
+.socials a img:hover {
+    transform: scale(1.1);
+    transition:  0.1s ease-out;
 }

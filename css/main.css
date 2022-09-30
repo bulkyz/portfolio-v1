@@ -40,6 +40,7 @@ h1, a {
 
 h2 {
     font-size: 3rem;
+    padding-top: 1.3rem;
 }
 
 h3 {
@@ -49,7 +50,7 @@ h3 {
 p {
     line-height: 1.6;
     font-size: 1rem;
-    color: #D1D1D1
+    color: #D1D1D1;
 }
 
 .home {
@@ -64,7 +65,7 @@ p {
     border-radius: 50%;
 }
 
-.home, img, h2, p {
+.home, h2, p {
     padding-bottom: 1.3rem;
     margin: 0;
 }
