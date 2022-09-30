@@ -50,7 +50,7 @@ h3 {
 p {
     line-height: 1.6;
     font-size: 1rem;
-    color: #D1D1D1;
+    color: #c4c4c4;
 }
 
 .home {
@@ -62,7 +62,7 @@ p {
 }
 
 .home img {
-    border-radius: 50%;
+    border-radius: 0.8rem;
 }
 
 .home, h2, p {
