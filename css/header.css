@@ -1,0 +1,46 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 2rem 3rem;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: 100vw;
+    background-color: #191435;
+}
+
+:root {
+    --primary-color: #120F21;
+    --secondary-color: #00FFE0;
+}
+
+nav {
+    font-size: 16px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+li {
+    padding: 0 3rem;
+}
+
+li:hover {
+    text-decoration: underline;
+    color: #00FFE0;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a {
+    color: white;
+}
