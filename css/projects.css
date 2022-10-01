@@ -24,3 +24,42 @@
     transition:  0.1s ease-out;
     transform: translateY(-1rem);
 }
+
+.projects-container {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 1600px){
+    .projects {
+        height: 150vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    :root {
+        --primary-color: #120F21;
+        --secondary-color: #00FFE0;
+        --softer-primary: #191435;
+    }
+    
+    .project {
+        width: 20rem;
+        height: 20rem;
+        background: rgb(21,18,43);
+        margin: 3rem;
+        border-radius: 0.5rem;
+    }
+    
+    .project:hover {
+        box-shadow: rgba(0, 255, 224, 0.4) 0px 5px, rgba(0, 255, 224, 0.3) 0px 10px, rgba(0, 255, 224, 0.2) 0px 15px, rgba(0, 255, 224, 0.1) 0px 20px, rgba(0, 255, 224, 0.05) 0px 25px;
+        transition:  0.1s ease-out;
+        transform: translateY(-1rem);
+    }
+
+    .projects-container {
+        display: flex;
+        flex-direction: column;
+    }
+}

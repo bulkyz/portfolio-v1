@@ -14,6 +14,7 @@ body {
     /* background: rgb(18,15,32);
     background: linear-gradient(141deg, rgba(18,15,32,1) 0%, rgba(30,23,66,1) 100%); */
     background-color: #191435;
+    width: 100vw;
 }
 
 :root {
@@ -61,7 +62,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 9rem 0 9rem;
+    /* padding: 0 9rem 0 9rem; */
 }
 
 .home img {
@@ -76,7 +77,8 @@ p {
 }
 
 .home svg {
-    min-width: 40%;
+    /* min-width: 40%; */
+    padding: 3rem;
 }
 
 .home button {
@@ -96,4 +98,108 @@ p {
 
 .introduction {
     max-width: 40%;
+}
+
+/* for laptop screens */
+@media screen and (max-width: 1600px){
+    * {
+        box-sizing: border-box;
+    }
+    
+    html {
+        font-family: 'Inter', sans-serif;
+        color: white;
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        /* background: rgb(18,15,32);
+        background: linear-gradient(141deg, rgba(18,15,32,1) 0%, rgba(30,23,66,1) 100%); */
+        background-color: #191435;
+    }
+    
+    :root {
+        --primary-color: #120F21;
+        --secondary-color: #00FFE0;
+        --softer-primary: #191435;
+    }
+    
+    .center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    h1 {
+        font-family: 'Pacifico', cursive;
+        font-size: 0.5rem;
+        color: var(--secondary-color);
+        font-weight: lighter;
+        font-size: 1.4rem;
+    }
+    
+    h1, a {
+        color: var(--secondary-color);
+    }
+    
+    h2 {
+        font-size: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    
+    h3 {
+    
+    }
+    
+    p {
+        line-height: 1.6;
+        font-size: 0.8rem;
+        color: #c4c4c4;
+    }
+    
+    .home {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5rem;
+    }
+    
+    .home img {
+        width: 5rem;
+        border-radius: 0.5rem;
+        filter: drop-shadow(0 0 0.75rem #00FFE0);
+        box-shadow: rgba(0, 255, 224, 0.4) 5px -5px, rgba(0, 255, 224, 0.3) 10px -10px, rgba(0, 255, 224, 0.2) 15px -15px, rgba(0, 255, 224, 0.1) 20px -20px, rgba(0, 255, 224, 0.05) 25px -25px;
+    }
+    
+    .home, h2, p {
+        padding-bottom: 1.3rem;
+        margin: 0;
+    }
+    
+    .home svg {
+        padding: 3rem;
+    }
+    
+    .home button {
+        background-color: #00FFE0;
+        padding: 1rem 2rem;
+        border-radius: 0.5rem;
+        border: none;
+        color: var(--primary-color);
+        font-weight: 800;
+    }
+    
+    .home button:hover {
+        text-decoration: underline;
+        cursor: pointer;
+        filter: drop-shadow(0 0 0.75rem #00FFE0);
+    }
+    
+    .introduction {
+        max-width: 40%;
+    }
 }
