@@ -17,6 +17,7 @@ header {
 :root {
     --primary-color: #120F21;
     --secondary-color: #00FFE0;
+    --softer-primary: #191435;
 }
 
 nav {

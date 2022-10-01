@@ -1,6 +1,7 @@
 :root {
     --primary-color: #120F21;
     --secondary-color: #00FFE0;
+    --softer-primary: #191435;
 }
 
 .skills {
@@ -13,7 +14,7 @@
 .skills-container {
     width: 50vw;
     padding: 4rem;
-    background: rgb(21,18,43);
+    background: var(--primary-color);
     background: linear-gradient(304deg, rgba(21,18,43,1) 0%, rgba(19,15,37,1) 100%);
     border-radius: 0.5rem;
     box-shadow: rgba(0, 255, 224, 0.4) -5px 5px, rgba(0, 255, 224, 0.3) -10px 10px, rgba(0, 255, 224, 0.2) -15px 15px, rgba(0, 255, 224, 0.1) -20px 20px, rgba(0, 255, 224, 0.05) -25px 25px;
