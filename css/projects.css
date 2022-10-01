@@ -17,6 +17,7 @@
     background: rgb(21,18,43);
     margin: 3rem;
     border-radius: 0.5rem;
+    border: 1px solid #00FFE0;
 }
 
 .project:hover {

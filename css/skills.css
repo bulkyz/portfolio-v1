@@ -18,10 +18,14 @@
     background: linear-gradient(304deg, rgba(21,18,43,1) 0%, rgba(19,15,37,1) 100%);
     border-radius: 0.5rem;
     box-shadow: rgba(0, 255, 224, 0.4) -5px 5px, rgba(0, 255, 224, 0.3) -10px 10px, rgba(0, 255, 224, 0.2) -15px 15px, rgba(0, 255, 224, 0.1) -20px 20px, rgba(0, 255, 224, 0.05) -25px 25px;
+    border: 1px solid #00FFE0;
 }
 
 h4 {
     color: var(--secondary-color);
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
 }
 
 .skills-grid {
@@ -69,7 +73,7 @@ h4 {
         text-align: center;
         justify-content: center;
         align-items: center;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
 }
