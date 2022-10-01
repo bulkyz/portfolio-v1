@@ -22,10 +22,18 @@
 }
 
 h4 {
-    color: var(--secondary-color);
+    color: white;
     margin: 1rem;
     padding: 0.5rem;
     border-radius: 0.5rem;
+}
+
+h3 {
+    font-size: 3rem;
+    padding: 0;
+    padding-bottom: 1.5rem;
+    margin: 0;
+    text-align: center;
 }
 
 .skills-grid {
@@ -36,7 +44,20 @@ h4 {
     justify-content: center;
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.skill {
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #00FFE0;
+}
+
+.skill:hover {
+    box-shadow: rgba(0, 255, 224, 0.4) 0px 5px, rgba(0, 255, 224, 0.3) 0px 10px, rgba(0, 255, 224, 0.2) 0px 15px, rgba(0, 255, 224, 0.1) 0px 20px, rgba(0, 255, 224, 0.05) 0px 25px;
+    transition:  0.1s ease-out;
+    transform: translateY(-1rem);
 }
 
 @media screen and (max-width: 1600px){
@@ -54,7 +75,7 @@ h4 {
     }
     
     .skills-container {
-        width: 40vw;
+        width: 50vw;
         padding: 2rem 4rem;
         background: var(--primary-color);
         background: linear-gradient(304deg, rgba(21,18,43,1) 0%, rgba(19,15,37,1) 100%);
@@ -73,7 +94,7 @@ h4 {
         text-align: center;
         justify-content: center;
         align-items: center;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
     }
 }
