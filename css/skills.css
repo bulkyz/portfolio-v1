@@ -51,7 +51,7 @@ h4 {
     
     .skills-container {
         width: 40vw;
-        padding: 4rem;
+        padding: 2rem 4rem;
         background: var(--primary-color);
         background: linear-gradient(304deg, rgba(21,18,43,1) 0%, rgba(19,15,37,1) 100%);
         border-radius: 0.5rem;
@@ -63,7 +63,7 @@ h4 {
     }
     
     .skills-grid {
-        padding: 0.5rem;
+        padding: 0.2rem;
         border-radius: 0.5rem;
         display: grid;
         text-align: center;

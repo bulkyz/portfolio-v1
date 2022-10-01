@@ -32,7 +32,7 @@
 
 @media screen and (max-width: 1600px){
     .projects {
-        height: 150vh;
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -45,8 +45,8 @@
     }
     
     .project {
-        width: 20rem;
-        height: 20rem;
+        width: 12rem;
+        height: 12rem;
         background: rgb(21,18,43);
         margin: 3rem;
         border-radius: 0.5rem;
@@ -60,6 +60,6 @@
 
     .projects-container {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
 }
