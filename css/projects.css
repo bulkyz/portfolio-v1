@@ -1,8 +1,5 @@
 .projects {
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 :root {
@@ -18,6 +15,7 @@
     margin: 3rem;
     border-radius: 0.5rem;
     border: 1px solid #00FFE0;
+    cursor: pointer;
 }
 
 .project:hover {
@@ -28,15 +26,37 @@
 
 .projects-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
+    min-height: 100%;
+}
+
+h5 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+    position: relative;
+    top: 15rem;
+    /* border-bottom: 1px solid #00FFE0;
+    line-height: 0.1em; */
+}
+
+h5 span {
+    padding: 1rem;
+    background-color: var(--softer-primary);
+}
+
+.project > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
 }
 
 @media screen and (max-width: 1600px){
     .projects {
         height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
     
     :root {
