@@ -1,0 +1,98 @@
+{
+    "short_name": "EatWell",
+    "name": "EatWell",
+    "lang": "en",
+    "description": "An application which helps (elderly) people to keep them from getting undernourished by checking how much they eat per session.",
+    "start_url": "https://i383577.hera.fhict.nl/",
+    "background_color": "#fbfbfb",
+    "theme_color": "#be1622",
+    "dir": "ltr",
+    "display": "standalone",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "/files/icon/android-icon-512x512-dunplab-manifest-26501.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/files/icon/android-icon-192x192-dunplab-manifest-26501.png",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/files/icon/apple-icon-180x180-dunplab-manifest-26501.png",
+            "type": "image/png",
+            "sizes": "180x180",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/files/icon/apple-icon-152x152-dunplab-manifest-26501.png",
+            "type": "image/png",
+            "sizes": "152x152",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/files/icon/apple-icon-144x144-dunplab-manifest-26501.png",
+            "type": "image/png",
+            "sizes": "144x144",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/files/icon/apple-icon-120x120-dunplab-manifest-26501.png",
+            "type": "image/png",
+            "sizes": "120x120",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/files/icon/apple-icon-114x114-dunplab-manifest-26501.png",
+            "type": "image/png",
+            "sizes": "114x114",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/files/icon/favicon-96x96-dunplab-manifest-26501.png",
+            "type": "image/png",
+            "sizes": "96x96",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/files/icon/apple-icon-76x76-dunplab-manifest-26501.png",
+            "type": "image/png",
+            "sizes": "76x76",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/files/icon/apple-icon-72x72-dunplab-manifest-26501.png",
+            "type": "image/png",
+            "sizes": "72x72",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/files/icon/apple-icon-60x60-dunplab-manifest-26501.png",
+            "type": "image/png",
+            "sizes": "60x60",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/files/icon/apple-icon-57x57-dunplab-manifest-26501.png",
+            "type": "image/png",
+            "sizes": "57x57",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/files/icon/favicon-32x32-dunplab-manifest-26501.png",
+            "type": "image/png",
+            "sizes": "32x32",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/files/icon/favicon-16x16-dunplab-manifest-26501.png",
+            "type": "image/png",
+            "sizes": "16x16",
+            "purpose": "any maskable"
+        }
+    ]
+}

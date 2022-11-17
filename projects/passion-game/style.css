@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-image: url(bg2.png);
+    font-family: 'Roboto', sans-serif;  
+}
+
+@font-face {
+    font-family: "dragonfire";
+    src: url(Enchanted\ Land.otf);
+}
+
+/* Roboto font import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+.button {
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+}
+
+#button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#start-button {
+    position: fixed;
+    bottom: 90px;
+    border: none;
+    padding: 10px;
+    background: none;
+    font-size: 35px;
+    outline: none;
+    font-weight: bold;
+    text-align: center;
+    animation-name: playbutton;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    border-radius: 30px;
+}
+
+#start-button:hover {
+    color: white;
+}
+
+@keyframes playbutton {
+0% {transform: scale(0.9);}
+50% { transform: scale(1.1);}
+100% {transform: scale(0.9);}
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.button:active {
+    transform: scale(0.9);
+}
+
+.wizard {
+    width:120px;
+    height:auto;
+    position: fixed;
+    bottom: 10px;
+    /* left:-100; */
+}
+
+.ally {
+    width: 120px;
+    height: auto;
+    position: fixed;
+    bottom: 10px;
+    transform: scaleX(-1);
+}
+
+#tower {
+    width: 150px;
+    height: auto;
+    right: 10px;
+    bottom: 10px;
+    position: fixed;
+}
+
+h1 {
+    margin: 20px;
+    font-family: "dragonfire";
+    src: url(Enchanted\ Land.otf);
+    text-align: center;
+    color: white;
+    font-size: 100px;
+    text-shadow: black 1px 0 1px;
+    letter-spacing: 3px;
+}
+
+h3 {
+    text-align: center;
+    color: red;
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: points;
+    animation-duration: 1.5s;
+}
+
+@keyframes points {
+    0% {opacity: 1;}
+    100% {opacity: 0.1;}
+}
+
+#unit-wrapper {
+    text-align: center;
+    width: 100%;
+}
+
+#text-wrapper {
+    width: 100%;
+    text-align: center;
+}
+
+h2 {
+    color: black;
+    text-align: center;
+    /*text-shadow: black 1px 0 3px;*/
+}
+
+#homescreen-tower {
+    padding-top: 100px;
+    width: 130px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+h4 {
+    color: black;
+    word-spacing: 60px;
+    font-size: 1em;
+    /*text-shadow: black 1px 0 3px;*/
+}
+
+#settings {
+    border: none;
+    padding: 10px;
+    margin: 20px;
+    background: black;
+    color: white;
+    border-radius: 20px;
+    outline: none;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+#settings:hover {
+    border: none;
+    outline: none;
+    transform: scale(1.1);
+}
+
+#settings:active {
+    border: none;
+    outline: none;
+    transform: scale(0.9);
+}
+
+h5 {
+        margin: 20px;
+        font-family: "dragonfire";
+        src: url(Enchanted\ Land.otf);
+        text-align: center;
+        color: white;
+        font-size: 100px;
+        text-shadow: black 1px 0 1px;
+        letter-spacing: 3px;
+        animation-name: startloop;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+}
+
+@keyframes startloop {
+    0% {transform: scale(1.1);}
+    50% { transform: scale(0.9);}
+    100% {transform: scale(1.1);}
+}

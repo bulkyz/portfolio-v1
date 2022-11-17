@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defend the Princess</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="female_cheer1.png"/>
+</head>
+<body>
+    <button id="settings" onclick="changeBackground()">Change Background</button>
+    <button id="settings" onclick="backToStart()">Back to Start</button>
+    <h1>Defend the Princess</h1>
+    <h2 id="points"></h2>
+    <h2 id="enemy-counter"></h2> 
+    <div id="text-wrapper">
+        <h4>50 80 100</h4>
+    </div>
+    <div id="unit-wrapper">
+        <img src="ally1.png" alt="" onclick="spawnAlly()" class="button">
+        <img src="ally2_greyed.png" alt="" onclick="" class="button">
+        <img src="ally3_greyed.png" alt="" onclick="" class="button">
+    </div>
+    <!-- <h2>Press S to start the game.</h2> -->
+    <main>
+        <img src="tower.png" alt="" id="tower">
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

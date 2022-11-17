@@ -1,0 +1,487 @@
+/* THIS IS THE NORMAL STUFF HTML/BODY ETC. */
+
+:root {
+  --theme-color: #be1622;
+  --header-height: 75px;
+  --nav-height: 75px;
+}
+
+* {
+  font-family: "Roboto";
+}
+
+html {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+body {
+  margin: 0;
+  scroll-behavior: smooth;
+  background-color: #fbfbfb;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 75px auto 75px;
+  grid-template-areas:
+    "headertop"
+    "mainmiddle"
+    "navbottom";
+}
+
+header {
+  grid-area: headertop;
+  background: var(--theme-color);
+  color: #fbfbfb;
+  height: var(--header-height);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+main {
+  grid-area: mainmiddle;
+  position: relative;
+}
+
+nav {
+  grid-area: navbottom;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: var(--nav-height);
+  border-top: 1px solid var(--theme-color);
+}
+
+nav a {
+  list-style-type: none;
+  text-decoration: none;
+  color: var(--theme-color);
+}
+
+#logo {
+  width: 60px;
+  height: auto;
+}
+
+/* END NORMAL STUFF */
+
+/* MAIN PART */
+
+.screens {
+  display: grid;
+  grid-template-columns: repeat(3, 100%);
+  overflow-x: hidden;
+  height: calc(100vh - var(--nav-height) - var(--header-height));
+  min-height: min-content;
+}
+
+.chart-wrap {
+  padding: 10px;
+}
+
+.chart-wrap-2 {
+  padding: 10px;
+}
+
+/* END MAIN */
+
+/* START TABS */
+
+svg {
+  fill: var(--theme-color);
+  width: 32px;
+  height: 32px;
+}
+
+#tabs {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  background: #fbfbfb;
+}
+
+.tab {
+  display: flex;
+  list-style-type: none;
+  text-decoration: none;
+  display: block;
+  flex-grow: 1;
+  text-align: center;
+  opacity: 0.6;
+}
+
+#tabs p {
+  margin: 0;
+}
+
+.tab.active {
+  opacity: 1;
+}
+
+/* END TABS */
+
+/* USER CARDS - LEX */
+/* USERS ALGEMEEN OPMAAK USER DIV */
+
+.user,
+.user2,
+.user4,
+.user3,
+.user5,
+.user6 {
+  background-color: #fbfbfb;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  max-width: 100%;
+  margin: 10px;
+  overflow: hidden;
+  border: 1px solid #be1622;
+}
+
+/* USER 1 OVERIGE OPMAAK */
+
+h6 {
+  opacity: 0.6;
+  margin: 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1b4774;
+}
+
+h2 {
+  letter-spacing: 1px;
+  margin: 10px 0;
+  color: #1b4774;
+}
+
+h5 {
+  letter-spacing: 1px;
+  margin: 10px 0;
+  color: #1b4774;
+  padding: 5px;
+  padding-left: 15px;
+  font-size: 1.5em;
+}
+
+h3 {
+  letter-spacing: 1px;
+  margin: 10px 0;
+  color: #6d98ba;
+  padding: 5px;
+  padding-left: 15px;
+  font-size: 1em;
+}
+
+h4 {
+  letter-spacing: 1px;
+  margin: 10px 0;
+  color: #be1622;
+  padding: 5px;
+  padding-left: 15px;
+  font-size: 1em;
+}
+
+.user-info,
+.user-info2,
+.user-info3,
+.user-info4,
+.user-info5 {
+  padding: 30px;
+  position: relative;
+  width: 100%;
+}
+
+.user-info h2,
+.user-info2 h2,
+.user-info3 h2,
+.user-info4 h2,
+.user-info5 h2 {
+  letter-spacing: 1px;
+  margin: 10px 0;
+  color: #1b4774;
+  word-wrap: break-word;
+  width: 60%;
+}
+
+.user-preview,
+.user-preview2,
+.user-preview3,
+.user-preview4,
+.user-preview5 {
+  color: #1b4774;
+  padding: 20px;
+  max-width: 250px;
+}
+
+.user-preview a,
+.user-preview2 a,
+.user-preview3 a,
+.user-preview4 a,
+.user-preview5 a {
+  color: #1b4774;
+  display: inline-block;
+  font-size: 12px;
+  opacity: 0.8;
+  margin-top: 30px;
+  text-decoration: none;
+}
+
+.progress-container,
+.progress-container2,
+.progress-container3,
+.progress-container4,
+.progress-container5 {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  text-align: right;
+  width: 11vh;
+}
+
+.progress,
+.progress2,
+.progress3,
+.progress4,
+.progress5 {
+  background-color: #ddd;
+  border-radius: 5px;
+  height: 15px;
+  width: 100%;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.progress-text,
+.progress-text2,
+.progress-text3,
+.progress-text4,
+.progress-text5 {
+  font-size: 10px;
+  opacity: 0.9;
+  letter-spacing: 1px;
+  color: #1b4774;
+}
+
+.btn,
+.btn2,
+.btn3,
+.btn4,
+.btn5 {
+  background-color: #1b4774;
+  border: 0;
+  border-radius: 50px;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.5);
+  color: #fbfbfb;
+  font-size: 16px;
+  padding: 12px 25px;
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  letter-spacing: 1px;
+  transition-duration: 0.4s;
+  border: 1px solid #1b4774;
+}
+
+.btn:hover,
+.btn2:hover,
+.btn3:hover,
+.btn4:hover,
+.btn5:hover {
+  background-color: #fbfbfb;
+  color: #1b4774;
+  border: 1px solid #1b4774;
+}
+
+/* USER PROGRESS BARS */
+/*        RED         */
+
+.progress::after,
+.progress2::after {
+  border-radius: 5px;
+  background-color: #f44336;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 100%;
+}
+
+/*      YELLOW        */
+
+.progress4::after,
+.progress3::after {
+  border-radius: 5px;
+  background-color: #ff9800;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 100%;
+}
+
+/*       GREEN        */
+
+.progress5::after {
+  border-radius: 5px;
+  background-color: #4caf50;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 100%;
+}
+
+/*  ENDING USER PROGRESS BARS */
+
+/* SETTINGS PAGE STYLING */
+
+.settings {
+  background-color: #fbfbfb;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  max-width: 100%;
+  height: 60px;
+  margin: 10px;
+  overflow: hidden;
+  border: 1px solid #be1622;
+}
+
+.icon-placeholder {
+  height: auto;
+  width: auto;
+  margin: 15px;
+}
+
+.text-placeholder {
+  margin: auto;
+  margin-left: 20px;
+  /* text-align: center; */
+}
+
+.text-placeholder h3 {
+  opacity: 1;
+  margin: 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1b4774;
+}
+
+/* END SETTINGS PAGE STYLING */
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 768px) {
+  body {
+    margin: 0;
+    scroll-behavior: smooth;
+    background-color: #fbfbfb;
+    display: grid;
+    grid-template-columns: 35% 30% 35%;
+    grid-template-rows: 75px auto 75px;
+    grid-template-areas:
+      "headertop headertop headertop"
+      "side1 mainmiddle side2"
+      "navbottom navbottom navbottom";
+  }
+
+  header {
+    grid-area: headertop;
+    background: var(--theme-color);
+    color: #fbfbfb;
+    height: var(--header-height);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+
+  main {
+    grid-area: mainmiddle;
+    position: relative;
+  }
+
+  nav {
+    grid-area: navbottom;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: var(--nav-height);
+    border-top: 1px solid var(--theme-color);
+  }
+
+  /* USER PROGRESS BARS */
+  /*        RED         */
+
+  .progress::after,
+  .progress2::after {
+    border-radius: 5px;
+    background-color: #f44336;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 100%;
+  }
+
+  /*      YELLOW        */
+
+  .progress4::after,
+  .progress3::after {
+    border-radius: 5px;
+    background-color: #ff9800;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 100%;
+  }
+
+  /*       GREEN        */
+
+  .progress5::after {
+    border-radius: 5px;
+    background-color: #4caf50;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 100%;
+  }
+
+  .progress-container,
+  .progress-container2,
+  .progress-container3,
+  .progress-container4,
+  .progress-container5 {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    text-align: right;
+    width: 90px;
+  }
+
+  /*  ENDING USER PROGRESS BARS */
+
+  .side1 {
+    grid-area: side1;
+  }
+  .side2 {
+    grid-area: side2;
+  }
+}
+
+/* END MEDIA QUERIES */

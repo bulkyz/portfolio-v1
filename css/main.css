@@ -87,9 +87,10 @@ h2, p {
 
 button {
     padding-top: 1.3rem;
+    margin-right: 24px;
 }
 
-.home button {
+.primary-button {
     background-color: #00FFE0;
     padding: 1.2rem 2.5rem;
     border-radius: 0.5rem;
@@ -98,7 +99,7 @@ button {
     font-weight: 800;
 }
 
-.home button:hover {
+.primary-button:hover {
     text-decoration: underline;
     cursor: pointer;
     filter: drop-shadow(0 0 0.75rem #00FFE0);
@@ -113,6 +114,23 @@ button {
 footer {
     text-align: center;
     color: var(--secondary-color);
+}
+
+.secondary-button {
+    border: 2px solid #00FFE0;
+    background-color: #191435;
+    padding: 1.2rem 2.5rem;
+    border-radius: 0.5rem;
+    color: #00FFE0;
+    font-weight: 800;
+}
+
+.secondary-button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    filter: drop-shadow(0 0 0.75rem #00FFE0);
+    transform: scale(1.010);
+    transition:  0.1s ease-out;
 }
 
 /* for laptop screens */
@@ -197,21 +215,6 @@ footer {
     
     #mainimg {
         padding-right: 3rem;
-    }
-    
-    .home button {
-        background-color: #00FFE0;
-        padding: 1rem 2rem;
-        border-radius: 0.5rem;
-        border: none;
-        color: var(--primary-color);
-        font-weight: 800;
-    }
-    
-    .home button:hover {
-        text-decoration: underline;
-        cursor: pointer;
-        filter: drop-shadow(0 0 0.75rem #00FFE0);
     }
     
     .introduction {
