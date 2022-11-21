@@ -1,0 +1,23 @@
+.gac {
+    padding-top: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0 9rem 0 9rem; */
+}
+
+.introduction {
+    max-width: 50%;
+}
+
+.introduction > img {
+    padding-right: 32px;
+    padding-bottom: 32px;
+}

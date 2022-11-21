@@ -70,7 +70,7 @@ p {
 #pfp {
     border-radius: 0.5rem;
     filter: drop-shadow(0 0 0.75rem #00FFE0);
-    box-shadow: rgba(0, 255, 224, 0.4) 5px -5px, rgba(0, 255, 224, 0.3) 10px -10px, rgba(0, 255, 224, 0.2) 15px -15px, rgba(0, 255, 224, 0.1) 20px -20px, rgba(0, 255, 224, 0.05) 25px -25px;
+    box-shadow: rgba(0, 255, 224, 0.4) -5px -5px, rgba(0, 255, 224, 0.3) -10px -10px, rgba(0, 255, 224, 0.2) -15px -15px, rgba(0, 255, 224, 0.1) -20px -20px, rgba(0, 255, 224, 0.05) -25px -25px;
 }
 
 h2, p {
@@ -128,9 +128,18 @@ footer {
 .secondary-button:hover {
     text-decoration: underline;
     cursor: pointer;
-    filter: drop-shadow(0 0 0.75rem #00FFE0);
+    /* filter: drop-shadow(0 0 0.75rem #00FFE0); */
     transform: scale(1.010);
     transition:  0.1s ease-out;
+}
+
+.ml2 {
+    color: #00ffe0;
+}
+  
+.ml2 .letter {
+    display: inline-block;
+    line-height: 1em;
 }
 
 /* for laptop screens */
